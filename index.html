@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <script src="index.js"></script>   
+  </head>
+  <body>
+    <center>
+      <h3>APPROXIMATE TRANFER POINTS CALCULATER</h3>
+    </center>
+    <br />
+    <form>
+      <table class="table">
+        <tbody style="text-align: left;">
+          <tr>
+            <th scope="row">
+              <h4>Date joing in the service</h4>
+            </th>
+            <td>
+              <input type="date" id="oldDate">
+            </td>
+            <td>
+              <h4 id="result1"></h4>
+            </td>
+         
+          </tr>
+          <tr>
+            <th> .</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>
+              <h4>Present working place catogeory</h4>
+            </th>
+            <td>
+              <select id="catagory">
+                <option>- select -</option>
+                <option value="1">I</option>
+                <option value="2">II</option>
+                <option value="3">III</option>
+                <option value="5">IV</option>
+              </select>
+            </td>
+            <td>
+              <h4 id="result2"></h4>
+            </td>
+          </tr>
+          <tr>
+            <th> .</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <h4>Date of joing in present school</h4>
+            </th>
+            <td>
+              <input type="date" id="joinDate">
+            </td>
+            <td>
+              <h4 id="result23"></h4>
+            </td>
+            <!--   <td><h4 id="result2"></h4></td>   -->
+          </tr>
+          <tr>
+            <th> .</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <h4>Are you claiming spouse? </h4>
+            </th>
+            <td>
+              <select id="spouse">
+                <option>- select -</option>
+                <option value="5">YES</option>
+                <option value="0">NO</option>
+              </select>
+            </td>
+            <td>
+              <h4 id="result4"></h4>
+            </td>
+          </tr>
+          <tr>
+            <th> .</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <h4>PHC %</h4>
+            </th>
+            <td>
+              <select id="phc">
+                <option>- select -</option>
+                <option value="0">NA</option>
+                <option value="5">Orthopedicalchal 40% to55% </option>
+                <option value="5">Hearing-:60–70 dB hearing (51%–70%)</option>
+                <option value="7">Visually 40% disability</option>
+                <option value="7">Orthopedically 56% to 69% </option>
+              </select>
+            </td>
+            <td>
+              <h4 id="result5"></h4>
+            </td>
+          </tr>
+          <tr>
+            <th> .</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <h4>Are you a Union Barrer</h4>
+            </th>
+            <td>
+              <select id="union">
+                <option>- select -</option>
+                <option value="5">YES</option>
+                <option value="0">NO</option>
+              </select>
+            </td>
+            <td>
+              <h4 id="result6"></h4>
+            </td>
+          </tr>
+          <tr>
+            <th> .</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <h4>Are you effected reapprotionment</h4>
+            </th>
+            <td>
+              <select id="reapprotionment">
+                <option>- select -</option>
+                <option value="0">NO</option>
+                <option value="5">YES</option>
+                <option value="7">YES CONT TWO TIMES</option>
+              </select>
+            </td>
+            <td>
+              <h4 id="result7"></h4>
+            </td>
+          </tr>
+          <tr>
+            <th> .</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <h4>Legally Separated Women <br />(Not applicable in case of remarriage)</h4>
+            </th>
+            <td>
+              <select id="SeperatedWomen">
+                <option>- select -</option>
+                <option value="5">YES</option>
+                <option value="0">NO</option>
+              </select>
+            </td>
+            <td>
+              <h4 id="result8"></h4>
+            </td>
+          </tr>
+          <tr>
+            <th> .</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <h4>The Scouts and Guides Unit who is<br /> operating for the past two years<br /> as on 31st May of that year.</h4>
+            </th>
+            <td>
+              <select id="Souts">
+                <option>- select -</option>
+                <option value="5">YES</option>
+                <option value="0">NO</option>
+              </select>
+            </td>
+            <td>
+              <h4 id="result9"></h4>
+            </td>
+          </tr>
+          <tr>
+            <th> .</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            
+            <td>
+              <h3 id="finalResult"></h3>
+            </td>
+          </tr>
+           <tr>
+            <th> .</th>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <center>
+      <button onclick="calculate()">submit</button>
+    </center>
+  </body>
+</html>
